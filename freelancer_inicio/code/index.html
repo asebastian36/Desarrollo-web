@@ -4,21 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Desarrollador web</title>
 </head>
 
 <body>
     <header>
-        <h1>Angel Sebastian Franco Lopez Freelancer</h1>
+        <h1>Angel Sebastian Franco Lopez <span>Freelancer</span></h1>
     </header>
 
     <nav>
-        <a href="">Inicio</a>
+        <a href="#">Inicio</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="#">Contacto</a>
     </nav>
 
     <section>
         <h2>Desarrollo Web Freelancer</h2>
         <p>Estado de Mexico, Nezahualcoyotl</p>
+
+        <a href="#">Contactar</a>
     </section>
 
     <main>
@@ -50,6 +55,38 @@
 
     <section>
         <h2>Contacto</h2>
+        <form action="">
+            <fieldset>
+                <legend>Contactame llenando todos los datos</legend>
+
+                <!-- aqui se uso un div porque no cumple la regla del uso ni del section, ni del article -->
+
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text" placeholder="Tu Nombre" />
+                </div>
+
+                <div>
+                    <label for="">Telefono</label>
+                    <input type="tel" placeholder="Tu telefono" />
+                </div>
+
+                <div>
+                    <label for="">Correo</label>
+                    <input type="email">
+                </div>
+
+                <div>
+                    <label for="">Mensaje</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+        </form>
     </section>
 
     <footer>

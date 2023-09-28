@@ -1,0 +1,21 @@
+/* 
+    el estilo en el html y en el body es para manejar de manera sencilla los rem 
+    lo cual hara que la pagina se adapte bien a diferentes tipos de pantalla
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;    /* 1rem = 10px */
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+span {
+    font-size: 2rem;
+}
