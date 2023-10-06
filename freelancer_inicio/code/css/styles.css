@@ -3,6 +3,19 @@
     lo cual hara que la pagina se adapte bien a diferentes tipos de pantalla
 */
 
+/* almacenar variables en selectores, tambien conocidas como custom properties */
+:root {
+    --blanco: #fff;
+    --negro: #212121;
+
+    /* color principal */
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+
+    --fuente-principal: 3.8rem;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -11,11 +24,12 @@ body {
     font-size: 16px;    /* 1rem = 10px */
 }
 
-h1 {
+.titulo {
     text-align: center;
-    font-size: 3.8rem;
+    /* mandando a llamar la variable */
+    font-size: var(--fuente-principal);
 }
 
-span {
+.titulo span {
     font-size: 2rem;
 }
