@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Store</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Staatliches&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    
+
 </head>
+
 <body>
     <header class="header">
         <a href="index.html">
@@ -24,11 +27,35 @@
     </nav>
 
     <main class="contenedor">
-        <h1>Nuestros productos</h1>
+        <h1>Github</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/8.jpg" alt="Imagen del producto">
+            <div class="camisa__contenido">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sapien diam, consectetur et sagittis id,
+                    pretium sed nibh. Ut maximus lobortis lorem, a vehicula ante porta sit amet. Morbi laoreet, mauris
+                    et blandit efficitur, tellus nunc congue ex, id venenatis libero augue at sapien.
+                </p>
+
+                <form class="formulario">
+                    <select class="formulario__opcion">
+                        <option disabled selected>--Seleccionar talla--</option>
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+
+                    <input class="formulario__opcion" type="number" placeholder="Cantidad" min="1">
+
+                    <input class="formulario__enviar" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
-        <p class="footer__texto">Front End Store - Todos los derechos reservados.</p>
+        <p class="footer__texto">Front-End Store - Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
