@@ -44,4 +44,11 @@ h1 {
         display: flex;
         gap: 2rem;
     }
+
+    /**
+        metodo viejo
+        .entrada-blog {
+            flex: 0 0 calc(33.3% - 1rem);
+        }
+     **/
 }
