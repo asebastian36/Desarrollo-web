@@ -36,6 +36,7 @@ a {
 
 h1, h2, h3, h4, h5 {
     font-family: var(--fuenteHeading);
+    line-height: 1.2;
 }
 
 h1 {
@@ -94,6 +95,10 @@ img {
     .header__texto {
         margin-top: 15rem;
     }
+}
+
+.barra {
+    padding-top: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -172,7 +177,85 @@ img {
     }
 }
 
-.boton-primario {
+.boton--primario {
     background-color: var(--negro);
 }
 
+/* aside */
+.boton--secundario {
+    background-color: var(--primario);
+}
+
+.cursos {
+    list-style: none;
+}
+
+.widget-curso {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-curso__label,
+.curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: 700;
+}
+
+.widget-curso__info,
+.curso__info {
+    font-weight: 400;
+}
+
+.widget-curso__label,
+.widget-curso__info,
+.curso__info,
+.curso__label {
+    font-size: 2rem;
+}
+
+/* footer */
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 6rem;
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
+
+/* sobre nosotros */
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+/* cursos */
+.curso {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+.curso:last-of-type {
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.curso__descripcion {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+/* entrada de blog */
