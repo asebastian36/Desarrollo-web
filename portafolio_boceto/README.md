@@ -11,8 +11,11 @@ El rol de HTML es importante para la accesibilidad y la usabilidad de las págin
 HTML tiene las siguientes funciones principales:
 
 * **Definir la estructura de una página web:** HTML utiliza etiquetas para indicar el contenido y la forma de una página web. Las etiquetas HTML se utilizan para definir elementos de contenido, como texto, imágenes, videos y enlaces.
+
 * **Proporcionar contenido:** HTML se utiliza para proporcionar contenido a las páginas web. El contenido puede ser texto, imágenes, videos, audio o enlaces a otros recursos.
+
 * **Formatear el contenido:** HTML se utiliza para formatear el contenido de una página web. El formato puede incluir cosas como el tamaño y el color del texto, el diseño de las imágenes y la disposición de los elementos de contenido.
+
 * **Agregar interactividad:** HTML se puede utilizar para agregar interactividad a las páginas web. La interactividad puede incluir cosas como botones, formularios y controles deslizantes.
 
 ### Beneficios de HTML
@@ -20,7 +23,9 @@ HTML tiene las siguientes funciones principales:
 HTML ofrece los siguientes beneficios:
 
 * **Es un lenguaje de marcado estándar:** HTML es un lenguaje de marcado estándar que es utilizado por todos los navegadores web. Esto significa que las páginas web creadas con HTML se pueden ver en cualquier navegador web.
+
 * **Es un lenguaje fácil de aprender:** HTML es un lenguaje fácil de aprender. Las etiquetas HTML son simples y fáciles de entender.
+
 * **Es un lenguaje versátil:** HTML se puede utilizar para crear una variedad de tipos de páginas web, desde sitios web simples hasta aplicaciones web complejas.
 
 ### Requisitos de HTML
