@@ -1,9 +1,11 @@
 // For Loop
 
+//  ejemplo 1:
 // for( let i = 0; i < 10; i++ ) {
 //     console.log(i);
 // }
 
+//  ejemplo 2:
 // for( let i = 1; i <= 100; i++ ) {
 //     if( i % 2 === 0 ) {
 //         console.log(`El Número ${i} es PAR`);
@@ -12,6 +14,7 @@
 //     }
 // }
 
+//  ejemplo 3:
 const carrito = [
     { nombre: 'Monitor 20 Pulgadas', precio: 500 },
     { nombre: 'Televisión 50 Pulgadas', precio: 700 },
@@ -27,16 +30,15 @@ for(let i = 0; i < carrito.length; i++ ) {
     console.log( carrito[i].nombre );
 }
 
-
-
 // While Loop
 
+//  ejemplo 1:
 // let i = 20; // Indice
-
+//
 // while(i < 10) { // Condición
-
+//
 //     console.log('Desde el while loop');
-
+//
 //     i++;  // Incremento
 // }
 
@@ -44,6 +46,7 @@ for(let i = 0; i < carrito.length; i++ ) {
 
 // Do While Loop
 
+//  ejemplo 1:
 let i = 100;
 
 do {

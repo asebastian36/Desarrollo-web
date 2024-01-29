@@ -1,6 +1,4 @@
-// Classes
-
-
+// Clases
 class Producto {
     constructor(nombre, precio) {
         this.nombre = nombre;
@@ -8,7 +6,7 @@ class Producto {
     }
 
     formatearProducto() {
-        return `El Producto ${this.nombre} tiene un precio de: $ ${this.precio}`;
+        return `El Producto ${this.nombre} tiene un precio de: $${this.precio}`;
     }
 }
 
@@ -25,8 +23,14 @@ class Libro extends Producto {
     formatearProducto() {
         return `${super.formatearProducto() } y su ISBN es ${this.isbn}`;
     }
+
+    getPrecio() {
+        console.log(this.precio);
+    }
 }
 
 const libro = new Libro('JavaScript la Revolución', 120, '910313981389139');
 console.log(libro.formatearProducto() );
+libro.getPrecio();
 console.log(producto2.formatearProducto());
+console.log(producto3.formatearProducto());

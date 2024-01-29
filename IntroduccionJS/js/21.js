@@ -1,20 +1,15 @@
-
 // Arrow Functions
 
+//  ejemplo simple
 const sumar2 = (n1, n2) => console.log( n1 + n2);
 sumar2(5, 10);
 
-
+//  ejemplo con parametros
 const aprendiendo = tecnologia => console.log(`Aprendiendo ${tecnologia}`)
 
 aprendiendo('JavaScript');
 
-
-
-
-
 // Array Methods
-
 const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'];
 
 const carrito = [

@@ -1,8 +1,10 @@
-
-function sumar(numero1 = 0, numero2 = 0) { // numero1, 2 son parametros
+// numero1, 2 son parametros con un valor por default es 0
+function sumar(numero1 = 0, numero2 = 0) {
     console.log(  numero2 + numero1);
 }
-sumar(10, 5); // Argumentos o los valores reales
+
+// Argumentos o los valores reales
+sumar(10, 5);
 sumar(3, 3);
 sumar(3, 6);
 sumar(1);

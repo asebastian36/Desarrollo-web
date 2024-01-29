@@ -1,24 +1,26 @@
 
-// Métodos de propiedad
+// Métodos de propiedad o crear nuestros propios metodos
 const reproductor = {
     reproducir : function(id) {
         console.log(`Reproduciendo Canción con el ID: ${id}`)
     },
-    pausar: function() {
+    pausar : function() {
         console.log('Pausando...')
     },
-    crearPlaylist: function(nombre) {
+    crearPlaylist : function(nombre) {
         console.log(`Creando la playlist: ${nombre}`)
     },
-    reproducirPlaylist: function(nombre) {
+    reproducirPlaylist : function(nombre) {
         console.log(`Reproduciendo la playlist: ${nombre}`)
     },
 }
 
+//  agregando otro metodo
 reproductor.borrarCancion = function(id) {
     console.log(`Eliminando la canción: ${id}`)
 }
 
+//  llamada a las funciones
 reproductor.reproducir(3840);
 reproductor.pausar();
 reproductor.borrarCancion(20);

@@ -1,23 +1,23 @@
 // This
 const reservacion = {
-    nombre: 'Juan',
-    apellido: 'De la torre',
+    nombre: 'Angel Sebastian',
+    apellido: 'Franco Lopez',
     total: 5000,
     pagado: false,
-    informacion: function() {
+    informacion : () => {
         console.log(`El Cliente ${this.nombre} reservó y su cantidad a pagar es de ${this.total}`);
     }
 }
 
-const reservacion2 = {
-    nombre: 'Pedro',
-    apellido: 'De la torre',
+const reservacion1 = {
+    nombre: 'Diego Isaac',
+    apellido: 'Franco Lopez',
     total: 5000,
     pagado: false,
-    informacion: function() {
+    informacion : () => {
         console.log(`El Cliente ${this.nombre} reservó y su cantidad a pagar es de ${this.total}`);
     }
 }
 
 reservacion.informacion();
-reservacion2.informacion();
+reservacion1.informacion();
