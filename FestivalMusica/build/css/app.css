@@ -1,0 +1,18 @@
+/*
+  anterior:
+
+  @import 'base/variables';
+  @import 'content/content';
+
+  nueva:
+  se llaman con nombres de carpetas
+*/
+/* con nombre de archivo */
+/* con nombre de archivo */
+h1 {
+  color: white;
+}
+
+body {
+  background-color: black;
+}

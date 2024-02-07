@@ -56,7 +56,7 @@ p {
 
     /**
         Metodo viejo
-        .contenido-principal {
+        .content-principal {
             flex-basis: calc(60% - 1rem);
         }
 

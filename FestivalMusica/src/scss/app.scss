@@ -1,0 +1,11 @@
+/*
+  anterior:
+
+  @import 'base/variables';
+  @import 'content/content';
+
+  nueva:
+  se llaman con nombres de carpetas
+*/
+@use 'base';
+@use 'content';

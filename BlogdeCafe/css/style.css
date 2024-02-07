@@ -143,7 +143,7 @@ img {
     color: var(--blanco);
 }
 
-/** contenido principal **/
+/** content principal **/
 @media (min-width: 768px) {
     .contenido-principal {
         display: grid;
