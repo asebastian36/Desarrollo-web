@@ -2,7 +2,7 @@
 @use 'src/scss/base/mixins' as mix;
 
 .sobre-festival {
-    padding: 5rem;
+    padding: 5rem 0;
 
     @include mix.tablet {
         @include mix.grid(2, 5rem);
