@@ -66,14 +66,22 @@ function images(done) {
     done();
 }
 
-function dev(done) {
-    watch('src/scss/**/*.scss', css);
+function javascript(done) {
+    src('src/js/**/*.js')
+    .pipe(dest('build/js'));
 
     done();
 }
 
+function dev(done) {
+    watch('src/scss/**/*.scss', css);
+    watch('src/js/**/*.js', javascript);
+    done();
+}
+
 exports.css = css;
+exports.javascript = javascript;
 exports.images = images;
 exports.toWebp = toWebp;
 exports.toAvif = toAvif;
-exports.dev = parallel(images, toWebp, toAvif, dev);
+exports.dev = parallel(images, toWebp, toAvif, javascript, dev);

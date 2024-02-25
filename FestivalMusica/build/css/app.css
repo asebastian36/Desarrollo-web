@@ -332,6 +332,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
 }
+body.fijar-body {
+  /*  para no dar scroll en la imagen */
+  overflow: hidden;
+}
 
 p {
   font-size: 2rem;
@@ -488,4 +492,140 @@ img {
 .contenido-festival .fecha {
   color: #F53756;
   font-weight: bold;
+}
+
+.lineup {
+  background-color: #F53756;
+  padding: 5rem 0;
+}
+.lineup h3, .lineup p {
+  text-align: center;
+  color: #FFF;
+}
+.lineup .dia {
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+@media (min-width: 768px) {
+  .lineup .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.lineup .escenarios-contenedor p {
+  color: #000;
+}
+.lineup .escenarios-contenedor .escenario {
+  padding: 2rem;
+}
+.lineup .escenarios-contenedor .escenario p:after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 2rem auto 0 auto;
+}
+.lineup .escenarios-contenedor .edm .nombre-escenario:after {
+  background-image: url(../img/icono_edm.png);
+}
+.lineup .escenarios-contenedor .rock .nombre-escenario:after {
+  background-image: url(../img/icono_rock.png);
+}
+.lineup .bg-amarillo {
+  background-color: #FEF46D;
+  /*  para elegir los elementos li impares  */
+}
+.lineup .bg-amarillo li:nth-child(odd) {
+  /*  darken oscurece el color segun el porcentaje  */
+  background-color: #fef03a;
+}
+.lineup .bg-verde {
+  background-color: #4CB8B3;
+}
+.lineup .bg-verde li:nth-child(odd) {
+  background-color: #3b9691;
+}
+.lineup .calendario {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lineup .calendario li {
+  padding: 2.5rem;
+  font-weight: bold;
+}
+.lineup .calendario li span {
+  font-weight: normal;
+}
+
+.galeria {
+  padding: 5rem 0;
+}
+.galeria h3 {
+  text-align: center;
+}
+
+.galeria-imagenes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 480px) {
+  .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.overlay picture {
+  display: block;
+  max-width: 80rem;
+}
+
+.btn-cerrar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #FFF;
+  color: #000;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+.btn-cerrar:hover {
+  cursor: pointer;
 }
