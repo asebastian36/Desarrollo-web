@@ -64,8 +64,48 @@ function crearGaleria() {
     }
 }
 
+function scrollNav() {
+    //  seleccionar los enlaces del header
+    const enlaces = document.querySelectorAll('.navegacion-principal a');
+
+    //  recorrer los enlaces para asignar el comportamiento que nos lleve a la seccion
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('click', function (e) {
+            //  evitamos que el navegador haga las acciones por default
+            e.preventDefault();
+
+            //  asignamos el nuevo comportamiento
+            const seccionScroll = e.target.attributes.href.value;
+            const seccion = document.querySelector(seccionScroll);
+            seccion.scrollIntoView({behavior: 'smooth'});
+        });
+    });
+}
+
+function navegacionFija() {
+    //  obtenemos la barra
+    const barra = document.querySelector('.header');
+
+    //  elegimos el elemento desde el que se volvera fija la barra
+    const sobreFestival = document.querySelector('.sobre-festival');
+    const body = document.querySelector('body');
+
+    //  para detectar cuando hacemos scroll hasta el elemento elegido y activamos el poner fija la barra o no
+    window.addEventListener('scroll', function () {
+        if (sobreFestival.getBoundingClientRect().top < 0) {
+            barra.classList.add('fijo');
+            body.classList.add('body-scroll');
+        } else {
+            barra.classList.remove('fijo');
+            body.classList.remove('body-scroll');
+        }
+    });
+}
+
 function iniciarApp() {
     crearGaleria();
+    scrollNav();
+    navegacionFija();
 }
 
 document.addEventListener('DOMContentLoaded', function () {

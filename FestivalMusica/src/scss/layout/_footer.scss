@@ -1,0 +1,12 @@
+@use 'src/scss/base/variables' as var;
+
+.site-footer {
+    background-color: var.$rosa;
+    padding: 1rem;
+
+    p {
+        color: var.$blanco;
+        text-align: center;
+        margin: 0;
+    }
+}

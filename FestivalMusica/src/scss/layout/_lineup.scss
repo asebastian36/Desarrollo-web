@@ -14,70 +14,70 @@
         text-transform: uppercase;
         margin: 5rem 0;
     }
+}
 
-    .escenarios-contenedor {
-        @include mix.tablet {
-            @include mix.grid(2, 5rem)
-        }
-
-        p {
-            color: var.$negro;
-        }
-
-        .escenario {
-            padding: 2rem;
-
-            p {
-                &:after {
-                    content: '';
-                    display: block;
-                    width: 20rem;
-                    height: 10rem;
-                    background-size: 15rem;
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    margin: 2rem auto 0 auto;
-                }
-            }
-        }
-
-        .edm .nombre-escenario:after {
-            background-image: url(../img/icono_edm.png);
-        }
-
-        .rock .nombre-escenario:after {
-            background-image: url(../img/icono_rock.png);
-        }
+.escenarios-contenedor {
+    @include mix.tablet {
+        @include mix.grid(2, 5rem)
     }
 
-    .bg-amarillo {
-        background-color: var.$amarillo;
+    p {
+        color: var.$negro;
+    }
+}
 
-        /*  para elegir los elementos li impares  */
-        li:nth-child(odd) {
-            /*  darken oscurece el color segun el porcentaje  */
-            background-color: darken(var.$amarillo, 10%);
+.escenario {
+    padding: 2rem;
+
+    p {
+        &:after {
+            content: '';
+            display: block;
+            width: 20rem;
+            height: 10rem;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 2rem auto 0 auto;
         }
     }
+}
 
-    .bg-verde {
-        background-color: var.$verde;
+.edm .nombre-escenario:after {
+    background-image: url(build/img/icono_edm.png);
+}
 
-        li:nth-child(odd) {
-            background-color: darken(var.$verde, 10%);
-        }
+.rock .nombre-escenario:after {
+    background-image: url(build/img/icono_rock.png);
+}
+
+.bg-amarillo {
+    background-color: var.$amarillo;
+
+    /*  para elegir los elementos li impares  */
+    li:nth-child(odd) {
+        /*  darken oscurece el color segun el porcentaje  */
+        background-color: darken(var.$amarillo, 10%);
     }
+}
 
-    .calendario {
-        @include mix.resetear-lista;
+.bg-verde {
+    background-color: var.$verde;
 
-        li {
-            padding: 2.5rem;
-            font-weight: bold;
+    li:nth-child(odd) {
+        background-color: darken(var.$verde, 10%);
+    }
+}
 
-            span {
-                font-weight: normal;
-            }
+.calendario {
+    @include mix.resetear-lista;
+
+    li {
+        padding: 2.5rem;
+        font-weight: bold;
+
+        span {
+            font-weight: normal;
         }
     }
 }

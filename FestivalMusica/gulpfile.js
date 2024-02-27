@@ -7,18 +7,30 @@ const { src, dest, watch, parallel } = require('gulp');
 const sass =  require('gulp-sass')(require('sass'));
 const plumber = require('gulp-plumber');
 
+//  esto se incluye hasta el final
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const postcss = require('gulp-postcss');
+const sourcemaps = require('gulp-sourcemaps');
+
 //  imagenes
 const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
 const cache = require('gulp-cache');
 const avif = require('gulp-avif');
 
+//  javascript
+const terser = require('gulp-terser-js');
+
 //  creando una tarea
 function css(done) {
     //  identificar el sass, compilarlo y almacenarlo
     src('src/scss/**/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(sass())
+        .pipe( postcss([autoprefixer(), cssnano()]) )
+        .pipe(sourcemaps.write('.'))
         .pipe(dest('build/css'));
 
     //  le avisa a gulp cuando se termina la tarea
@@ -68,7 +80,10 @@ function images(done) {
 
 function javascript(done) {
     src('src/js/**/*.js')
-    .pipe(dest('build/js'));
+        .pipe(sourcemaps.init())
+        .pipe(terser())
+        .pipe(sourcemaps.write('.'))
+        .pipe(dest('build/js'));
 
     done();
 }
