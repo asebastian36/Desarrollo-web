@@ -1,50 +1,53 @@
-# Nota inicial
+# Primer proyecto
 
-## El rol de HTML
+## Etiqueta `meta`
 
-Definir la estructura de una página web. HTML es un lenguaje de marcado que utiliza etiquetas para indicar el contenido y la forma de una página web. Las etiquetas HTML se utilizan para definir elementos de contenido, como texto, imágenes, videos y enlaces.
+La etiqueta `<meta>` en HTML es una de las más importantes para proporcionar información adicional sobre el documento web. Aunque no es visible directamente para los usuarios, los navegadores, motores de búsqueda y otras herramientas utilizan esta información para entender mejor la página.
 
-El rol de HTML es importante para la accesibilidad y la usabilidad de las páginas web. Las etiquetas HTML ayudan a los navegadores web a interpretar el contenido de una página web, lo que permite que las personas con discapacidades puedan acceder y utilizar la página web. Las etiquetas HTML también ayudan a los usuarios a navegar por una página web, lo que facilita la comprensión del contenido de la página web.
+### ¿Qué hace la etiqueta `<meta>`?
+La etiqueta `<meta>` se utiliza para definir metadatos (información sobre los datos) del documento HTML. Estos metadatos no afectan directamente el contenido visible de la página, pero son cruciales para aspectos como SEO (optimización para motores de búsqueda), compatibilidad, rendimiento y configuraciones generales.
 
-### Funciones de HTML
+Se coloca dentro del `<head>` del documento.
 
-HTML tiene las siguientes funciones principales:
+### Resumen de atributos comunes
 
-* **Definir la estructura de una página web:** HTML utiliza etiquetas para indicar el contenido y la forma de una página web. Las etiquetas HTML se utilizan para definir elementos de contenido, como texto, imágenes, videos y enlaces.
+| Atributo     | Descripción                                                                 |
+|--------------|-----------------------------------------------------------------------------|
+| `name`       | Define el tipo de metadato (ej. `description`, `keywords`, `author`).       |
+| `content`    | Proporciona el valor del metadato.                                          |
+| `charset`    | Define la codificación de caracteres del documento (ej. `UTF-8`).           |
+| `http-equiv` | Proporciona instrucciones HTTP adicionales (ej. `refresh`, `content-type`). |
+| `viewport`   | Controla cómo se muestra la página en dispositivos móviles.                 |
 
-* **Proporcionar contenido:** HTML se utiliza para proporcionar contenido a las páginas web. El contenido puede ser texto, imágenes, videos, audio o enlaces a otros recursos.
+### Importancia de los metadatos
 
-* **Formatear el contenido:** HTML se utiliza para formatear el contenido de una página web. El formato puede incluir cosas como el tamaño y el color del texto, el diseño de las imágenes y la disposición de los elementos de contenido.
+- **SEO (Optimización para motores de búsqueda)**: Los metadatos como `description` y `keywords` ayudan a mejorar la visibilidad de tu sitio en los resultados de búsqueda.
+- **Compatibilidad**: La codificación (`charset`) asegura que los caracteres se muestren correctamente en todos los navegadores.
+- **Diseño responsivo**: El atributo `viewport` garantiza que tu sitio se vea bien en dispositivos móviles.
+- **Redirecciones**: El uso de `http-equiv="refresh"` permite redirigir automáticamente a otra página.
 
-* **Agregar interactividad:** HTML se puede utilizar para agregar interactividad a las páginas web. La interactividad puede incluir cosas como botones, formularios y controles deslizantes.
 
-### Beneficios de HTML
+## Textos
 
-HTML ofrece los siguientes beneficios:
+La etiqueta `<h>` hay desde el 1 hasta el 6 para titulos segun su importancia, la etiqueta `<p>` para textos como parrafos.
 
-* **Es un lenguaje de marcado estándar:** HTML es un lenguaje de marcado estándar que es utilizado por todos los navegadores web. Esto significa que las páginas web creadas con HTML se pueden ver en cualquier navegador web.
+> No puede haber dos `<h1>`
 
-* **Es un lenguaje fácil de aprender:** HTML es un lenguaje fácil de aprender. Las etiquetas HTML son simples y fáciles de entender.
+## Estructurar la pagina
 
-* **Es un lenguaje versátil:** HTML se puede utilizar para crear una variedad de tipos de páginas web, desde sitios web simples hasta aplicaciones web complejas.
+> Es buena idea empezar una pagina por la estructura
 
-### Requisitos de HTML
+Para parte superior: `<header>`, parte inferior: `<footer>`, para navegacion: `<nav>`, para el contenido principal: `<main>`, para otro tipo de seccion: `<section>`, Para entradas de blog o noticias: `<article>`, para una barra lateral: `<aside>`, para secciones distintas a las anteriores: `<div>`.
 
-Para crear páginas web con HTML, necesitarás un editor de texto. Un editor de texto es un programa que te permite crear y editar archivos de texto. Hay muchos editores de texto disponibles, como Notepad, Sublime Text y Visual Studio Code.
+> Tip para usar `<section>` si el primer elemento hijo es un titulo, se usa `<section>`, la excepcion para no usarla es que ese titulo sea el principal.
 
-Una vez que tengas un editor de texto, puedes comenzar a crear páginas web con HTML. Para aprender a usar HTML, puedes consultar tutoriales en línea o tomar un curso de desarrollo web.
+## Navegacion
 
-### Estructura de HTML
+> Una barra de navegacion solo es necesaria si hay multiples enlaces en una parte de la pagina.
 
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <title>Mi primera página web</title>
-</head>
-<body>
-  <h1>Este es el título de mi página web</h1>
-  <p>Este es el primer párrafo de mi página web</p>
-</body>
-</html>
-```
+Se utiliza `<nav>` para navegacion sin multiples niveles, sino se usa `<ul>` con `<li>`.
+
+> Un boton puede ser un enlace con estilos css
+
+
+
